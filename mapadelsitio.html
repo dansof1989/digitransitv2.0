@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitransit - Seguvial S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image">
+        <!-- clase hader-image /modificada por css -->
+
+        <div class="header-title"><!-- clase hader-title /modificada por css -->
+            <h1>Mapa de Navegación</h1>
+        </div>
+        <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+            class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+    </div>
+
+
+
+
+
+    <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+
+        <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+            id="accesibilidad-icon">
+        <!-- clase icon-accesibilidad /modificada por css  round-circle para redondear la imagen-->
+        <div id="accesibilidad-menu" class="accesibilidad-menu">
+            <ul>
+                <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+                <li><button id="aumentar-texto">Aumentar Texto</button></li>
+                <li><button id="disminuir-texto">Disminuir Texto</button></li>
+                <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+            </ul>
+        </div>
+
+        <img src="img/mapa del sitio.PNG" alt="mapa de Navegacion" class="centrar-imagen">  <!-- imagen del mapa del sitio y la clase para centrarla-->
+
+        <div class="botonvolver">
+            <input type="button" value="Volver" class="custom-button rounded-pill" onclick="window.history.back();">
+            <!-- para volver a la pagina anterior-->
+        </div>
+
+
+        <!-- Agrega la clase "rounded-pill" para hacerlo ovalado -->
+
+    </main>
+
+    <footer class="p-2">
+        Copyright © DJF-Software 2023
+        <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitransit - Seguvial S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image">
+        <!-- clase hader-image /modificada por css -->
+
+        <div class="header-title"><!-- clase hader-title /modificada por css -->
+            <h1>Correción de Comparendos</h1>
+        </div>
+        <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+            class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+    </div>
+
+
+
+    <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+
+        <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+            id="accesibilidad-icon">
+        <!-- clase icon-accesibilidad /modificada por css  round-circle para redondear la imagen-->
+        <div id="accesibilidad-menu" class="accesibilidad-menu">
+            <ul>
+                <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+                <li><button id="aumentar-texto">Aumentar Texto</button></li>
+                <li><button id="disminuir-texto">Disminuir Texto</button></li>
+                <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+            </ul>
+        </div>
+
+
+
+        <a href="mapadelsitio.html">
+            <img src="ico/mapa del sitio icono.jpg" alt="Icono Mapa Sitio" class="icon-mapa-sitio rounded-circle">
+        </a>
+
+
+        <!-- clase icon-mapa-sitio /modificada por css round-circle para redondear la imagen-->
+
+        <!-- validacion de Comaprendos -->
+
+        <h5 class="text-center-custom">Por favor cargue el archvo plano remitido por el solicitante,
+            seleccione el item a corregir
+            haga la modificacion en la caja de texto y de clic en el boton
+            “Generar Plano de Correcion”</h5>
+        <br> <br> <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group d-flex">
+                            <label for="campo1" class="mr-0">Archivo plano del solicitante:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="campo1" placeholder="Ruta del archivo"
+                                    readonly>
+                                <div class="input-group-append">
+                                    <label class="p-3 botonexaminar">
+                                        Examinar
+                                        <input type="file" style="display: none;" id="fileInput1">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+
+
+                        <div class="form-group row">
+                            <label for="categoriaLicencia"
+                                class="col-sm-4 col-form-label margeninpunts-labels">Seleccione el Item a
+                                Corregir:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control rounded margeninpunts-labels" id="categoriaLicencia">
+                                    <option value="">Seleccione el Item</option>
+                                    <option value="A1">Numero de Comparendo</option>
+                                    <option value="A2">Hora</option>
+                                    <option value="A3">Direccion</option>
+                                    <option value="B1">Ciudad</option>
+                                    <option value="B2">Placa Vehiculo</option>
+                                    <option value="B3">Tipo Vehiculo</option>
+                                    <option value="C1">Nombre Infractor</option>
+                                    <option value="C2">Apellido Infractor</option>
+                                    <option value="C3">Tipo Documento</option>
+                                    <option value="C4">Numero Documento</option>
+                                    <option value="D1">Edad</option>
+                                    <option value="D2">Correo Electronico</option>
+                                    <option value="D3">Telefono</option>
+                                    <option value="D4">Licencia</option>
+                                    <option value="E">Categoria Licencia</option>
+                                    <option value="E1">Infraccion</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br><br>
+                        <input type="text" class="form-control" id="campo1" placeholder="Item a Coregir" readonly>
+                        <br>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- botoon para generar planos de correcion -->
+        <div class="d-flex flex-column align-items-center">
+            <div class="mx-1 mt-4">
+                <input type="button" value="Generar Plano de Correcion" class="custom-button rounded-pill"
+                    id="generarplanocorrecion">
+                <br><br><br><br>
+
+
+                <div class="d-flex justify-content-center mt-6">
+                    <div class="mx-2">
+                        <input type="button" value="Volver" class="custom-button rounded-pill"
+                            onclick="window.history.back();">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </main>
+
+    <footer class="p-2">
+        Copyright © DJF-Software 2023
+        <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+    </footer>
+</body>
+
+</html>

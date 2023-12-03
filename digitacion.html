@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitransit - Seguvial S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image">
+        <!-- clase hader-image /modificada por css -->
+
+        <div class="header-title"><!-- clase hader-title /modificada por css -->
+            <h1>Digitación de Comparendos</h1>
+        </div>
+        <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+            class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+    </div>
+
+
+
+    <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+
+        <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+            id="accesibilidad-icon">
+        <!-- clase icon-accesibilidad /modificada por css  round-circle para redondear la imagen-->
+        <div id="accesibilidad-menu" class="accesibilidad-menu">
+            <ul>
+                <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+                <li><button id="aumentar-texto">Aumentar Texto</button></li>
+                <li><button id="disminuir-texto">Disminuir Texto</button></li>
+                <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+            </ul>
+        </div>
+
+
+
+        <a href="mapadelsitio.html">
+            <img src="ico/mapa del sitio icono.jpg" alt="Icono Mapa Sitio" class="icon-mapa-sitio rounded-circle">
+        </a>
+
+
+        <!-- clase icon-mapa-sitio /modificada por css round-circle para redondear la imagen-->
+
+        <!-- Digitacion de Comparendos -->
+
+        <h3 class="text-center">Registro 1 de 1</h3>
+        <br>
+
+        <p class="text-center">Por favor ingrese la informacion en los campos requeridos: </p>  <!-- text-center para alinear el texto -->
+        <br>
+
+        <div class="container"> <!-- div para separar cada elemento -->
+            <div class="row justify-content-center align-items-center" style="height: 5vh;"> <!-- row para una fila que contiene columanas para lubicar el contenido en columnas -->
+                <div class="col-4">     <!-- para alinear de forma horizontal el contenido de las filas y style heigth para la altura de la fila -->
+                    <div class="form-group d-flex"> <!-- form-gorup para indicar que bootstrap que es un formulario -->
+                        <label for="numeroComparendo" class="mr-1">Numero Comparendo:</label> <!-- mr-1 para margen a la derecha -->
+                        <input type="text" class="form-control" id="numeroComparendo" name="numeroComparendo"
+                            onblur="validateComparendo(this)"> <!-- funcion js para validar el numero del comparendo con Js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <!-- primera columna -->
+                <div class="col-12 col-md-6">
+                    <form> <!-- formulario -->
+                        <div class="form-group row"> <!-- grupo formulario y row para para indicar la fila-->
+                            <label for="fecha" class="col-sm-4 col-form-label margeninpunts-labels">Fecha
+                                Comparendo:</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control rounded margeninpunts-labels" id="fecha"
+                                    placeholder=""> <!-- input entrada de datos tipo de dato fecha clases form-control para aplicar estilo de formulario -->
+                            </div> <!-- margeninputsllabels, para aplicar diseño personalisado por css a los labels -->
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="direccion"
+                                class="col-sm-4 col-form-label margeninpunts-labels">Dirección:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels" id="direccion"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="placaVehiculo" class="col-sm-4 col-form-label margeninpunts-labels">Placa
+                                Vehiculo:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels" id="placaVehiculo"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="nombreInfractor" class="col-sm-4 col-form-label margeninpunts-labels">Nombre
+                                Infractor:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels"
+                                    id="nombreInfractor" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="tipoDocumento" class="col-sm-4 col-form-label margeninpunts-labels">Tipo
+                                Documento:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control rounded margeninpunts-labels" id="tipoDocumento"><!-- señect para indicar por html que e suna lista desplegable de seleccion -->
+                                    <option value="">Selecciona Tipo de Documento</option><!-- form-conrol para aplicar los estilos de todo el formulario -->
+                                    <option value="Cédula de Ciudadanía">Cedula de Ciudadania</option> <!-- rounded para hacer que se vea redondeado el input -->
+                                    <option value="Tarjeta de Identidad">Tarjeta de Identidad</option> <!-- option para indicar una de las opciones seleccionables y sus respectivos valores -->
+                                    <option value="Cédula de Extranjería">Cedula de Extranjeria</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                    <option value="Registro Civil">Registro Civil</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="edad" class="col-sm-4 col-form-label margeninpunts-labels">Edad:</label>
+                            <div class="col-sm-8">
+                                <input type="number" class="form-control rounded margeninpunts-labels" id="edad"
+                                    placeholder="" oninput="validarEdad(this)">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for "telefono" class="col-sm-4 col-form-label margeninpunts-labels">Telefono:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels" id="telefono"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="categoriaLicencia"
+                                class="col-sm-4 col-form-label margeninpunts-labels">Categoría Licencia:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control rounded margeninpunts-labels" id="categoriaLicencia">
+                                    <option value="">Selecciona una categoria</option>
+                                    <option value="A1">A1 - Motocicletas</option>
+                                    <option value="A2">A2 - Motocicletas</option>
+                                    <option value="A3">A3 - Motocicletas</option>
+                                    <option value="B1">B1 - Automóviles</option>
+                                    <option value="B2">B2 - Automóviles</option>
+                                    <option value="B3">B3 - Automóviles</option>
+                                    <option value="C1">C1 - Camiones</option>
+                                    <option value="C2">C2 - Camiones</option>
+                                    <option value="C3">C3 - Camiones</option>
+                                    <option value="C4">C4 - Camiones</option>
+                                    <option value="D1">D1 - Buses</option>
+                                    <option value="D2">D2 - Buses</option>
+                                    <option value="D3">D3 - Buses</option>
+                                    <option value="D4">D4 - Buses</option>
+                                    <option value="E">E - Tractocamiones</option>
+                                    <option value="E1">E1 - Remolques y semirremolques</option>
+                                    <option value="E2">E2 - Remolques y semirremolques</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- segunda columna -->
+                <div class="col-12 col-md-6">
+                    <form>
+                        <div class="form-group row">
+                            <label for="hora" class="col-sm-4 col-form-label margeninpunts-labels">Hora:</label>
+                            <div class="col-sm-8">
+                                <input type="time" class="form-control rounded margeninpunts-labels" id="hora"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="ciudad" class="col-sm-4 col-form-label margeninpunts-labels">Ciudad:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control rounded margeninpunts-labels" id="ciudad">
+                                    <option value="">Selecciona Ciudad</option>
+                                    <option value="Bogotá">Bogota D.C.</option>
+                                    <option value="Medellín">Medellíi</option>
+                                    <option value="Cali">Cali</option>
+                                    <option value="Barranquilla">Barranquilla</option>
+                                    <option value="Cartagena">Cartagena</option>
+                                    <option value="Bucaramanga">Bucaramanga</option>
+                                    <option value="Pereira">Pereira</option>
+                                    <option value="Santa Marta">Santa Marta</option>
+                                    <option value="Cúcuta">Cucuta</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="tipoVehiculo" class="col-sm-4 col-form-label margeninpunts-labels">Tipo de
+                                Vehículo:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control rounded margeninpunts-labels" id="tipoVehiculo">
+                                    <option value="">Selecciona un tipo de vehiculo</option>
+                                    <option value="Automóvil">Automovil</option>
+                                    <option value="Motocicleta">Motocicleta</option>
+                                    <option value="Camioneta">Camioneta</option>
+                                    <option value="Camión">Camion</option>
+                                    <option value="Autobús">Autobus</option>
+                                    <option value="Tractocamión">Tractocamion</option>
+                                    <option value="Remolque">Remolque</option>
+                                    <option value="Bicicleta">Bicicleta</option>
+                                    <option value="Triciclo">Triciclo</option>
+                                    <option value="Cuatrimoto">Cuatrimoto</option>
+                                    <option value="Moto-carro">Moto-carro</option>
+                                    <option value="Volqueta">Volqueta</option>
+                                    <option value="Buseta">Buseta</option>
+                                    <option value="Microbús">Microbus</option>
+                                    <option value="Taxi">Taxi</option>
+                                    <option value="Ciclomotor">Ciclomotor</option>
+                                    <option value="Motoneta">Motoneta</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="apellidoInfractor" class="col-sm-4 col-form-label margeninpunts-labels">Apellido
+                                Infractor:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels"
+                                    id="apellidoInfractor" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="numeroDocumento" class="col-sm-4 col-form-label margeninpunts-labels">Numero
+                                Documento:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels"
+                                    id="numeroDocumento" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="correo" class="col-sm-4 col-form-label margeninpunts-labels">Correo
+                                Electronico:</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control rounded margeninpunts-labels" id="correo"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="licencia" class="col-sm-4 col-form-label margeninpunts-labels">Licencia:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control rounded margeninpunts-labels" id="licencia"
+                                    placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="infraccion"
+                                class="col-sm-4 col-form-label margeninpunts-labels">Infracción:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control rounded margeninpunts-labels" id="infraccion">
+                                    <option value="">Selecciona un tipo de infraccion</option>
+                                    <option value="A01">A01 - Exceso de velocidad</option>
+                                    <option value="A02">A02 - Conducir en estado de embriaguez</option>
+                                    <option value="A03">A03 - No respetar señales de transito</option>
+                                    <option value="A04">A04 - No llevar el cinturon de seguridad</option>
+                                    <option value="A05">A05 - No respetar el semaforo</option>
+                                    <option value="A06">A06 - Uso del telefono movil mientras se conduce</option>
+                                    <option value="A07">A07 - No portar la licencia de conduccion</option>
+                                    <option value="A08">A08 - Estacionar en lugar prohibido</option>
+                                    <option value="A09">A09 - Manejar sin seguro</option>
+                                    <option value="A10">A10 - Otras infracciones de tránsito</option>
+                                    <option value="B01">B01 - Sobrepasar limites de velocidad</option>
+                                    <option value="B02">B02 - No usar casco en motocicletas</option>
+                                    <option value="B03">B03 - No respetar las señales de pare</option>
+                                    <option value="B04">B04 - No ceder el paso en intersecciones</option>
+                                    <option value="B05">B05 - No respetar las señales de trafico</option>
+                                    <option value="B06">B06 - Uso de celular mientras se conduce</option>
+                                    <option value="B07">B07 - Conducir sin cinturon de seguridad</option>
+                                    <option value="B08">B08 - Estacionar en zona prohibida</option>
+                                    <option value="B09">B09 - No detenerse ante un semaforo en rojo</option>
+                                    <option value="B10">B10 - Circular en sentido contrario</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row justify-content-center align-items-center" style="height: 5vh;">
+                <div class="col-4">
+                    <div class="form-group d-flex">
+                        <label for="valorInfraccion" class="mr-1">Valor Infraccion $:</label>
+                        <input type="text" class="form-control" id="valorInfraccion" name="valorInfraccion">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- boton para generar Archivo -->
+        <div class="d-flex justify-content-center">  <!-- flexbos y alineacion -->
+            <div class="botonvolver mx-1 mt-4"> <!-- diseño del margen y tamaño del boton -->
+                <input type="button" value="Generar Archivo" class="custom-button rounded-pill" id="generarPlanos">
+                <!-- input tipo boton el valor que es el texto las clases para su personalizacion custom-button y rounded-pill para el efecto redondo y su id para identificarlo con Js -->
+                
+            </div>
+
+
+            <div class="botonvolver mx-1 mt-4"> 
+                <!-- para volver a la pagina anterior-->
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="p-2">
+        Copyright © DJF-Software 2023
+        <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitransit - Seguvial S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image">
+        <!-- clase hader-image /modificada por css -->
+
+        <div class="header-title"><!-- clase hader-title /modificada por css -->
+            <h1>Depuración de Información - BD Simit</h1>
+        </div>
+        <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+            class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+    </div>
+
+
+
+    <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+
+        <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+            id="accesibilidad-icon">
+        <!-- clase icon-accesibilidad /modificada por css  round-circle para redondear la imagen-->
+        <div id="accesibilidad-menu" class="accesibilidad-menu">
+            <ul>
+                <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+                <li><button id="aumentar-texto">Aumentar Texto</button></li>
+                <li><button id="disminuir-texto">Disminuir Texto</button></li>
+                <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+            </ul>
+        </div>
+
+
+
+        <a href="mapadelsitio.html">
+            <img src="ico/mapa del sitio icono.jpg" alt="Icono Mapa Sitio" class="icon-mapa-sitio rounded-circle">
+        </a>
+
+
+        <!-- clase icon-mapa-sitio /modificada por css round-circle para redondear la imagen-->
+
+        <!-- Depuracion de BD -->
+
+        <h4 class="text-center-custom">Por favor cargue los 3 archvios solicitados y de clic en el boton ejecutar
+            proceso:</h4>  <!-- Se puso titulo para hacer un poco mas grande el tamaño del texxto -->
+        <br> <br> <br>
+        <div class="container"> <!-- Contenedor de las tres opciones para el cargue de los archivos -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form> <!-- formulario que contiene las tres opciones -->
+                        <div class="form-group d-flex">
+                            <label for="campo1" class="mr-0">Consolidado Cargues:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="campo1" placeholder="Ruta del archivo"
+                                    readonly> <!-- input que tendra el nombre del archivo cuando se cargue identificador para js place holder que indicara ruta del archivo aunque solo mostrara el nombre del archivo -->
+                                <div class="input-group-append"> <!-- Boton de examinar para cargar el archivo deseado -->
+                                    <label class="p-3 botonexaminar">
+                                        Examinar
+                                        <input type="file" style="display: none;" id="fileInput1"> <!-- id indentifacor para Js -->
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="form-group d-flex">
+                            <label for="campo2" class="mr-0">Imposicion Comp-BD:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="campo2" placeholder="Ruta del archivo"
+                                    readonly>
+                                <div class="input-group-append">
+                                    <label class="p-3 botonexaminar">
+                                        Examinar
+                                        <input type="file" style="display: none;" id="fileInput2">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group d-flex">
+                            <label for="campo3" class="mr-2">Consolida. Coreccion:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="campo3" placeholder="Ruta del archivo"
+                                    readonly>
+                                <div class="input-group-append">
+                                    <label class="p-3 botonexaminar">
+                                        Examinar
+                                        <input type="file" style="display: none;" id="fileInput3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Boton de Ejecutar proceso -->
+        <div class="d-flex flex-column align-items-center">
+            <div class="mx-1 mt-4">
+                <input type="button" value="1. Ejecutar Proceso" class="custom-button rounded-pill" id="proceso1">
+                <br><br>
+                <div class="container">
+                    <div class="progress"> <!-- imagen de progeso tomada con Bootrstrap - Barra con porcentaje al 50% -->
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"> 
+                            50%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <div class="mx-1 mt-4">
+                    <input type="button" value="2. Descargar Archivo" class="custom-button rounded-pill" id="proceso2">
+
+
+                </div>
+
+                <div class="mx-1 mt-4">
+                    <input type="button" value="Volver" class="custom-button rounded-pill"
+                        onclick="window.history.back();">
+
+                </div>
+            </div>
+
+
+
+    </main>
+
+    <footer class="p-2">
+        Copyright © DJF-Software 2023
+        <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+    </footer>
+</body>
+
+</html>

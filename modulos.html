@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitransit - Seguvial S.A.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="header-container">
+    <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image"><!-- clase hader-image /modificada por css -->
+    
+
+    <div class="header-title"><!-- clase hader-title /modificada por css -->
+      <h1>Modulos</h1>
+    </div>
+    <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+      class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+  </div>
+
+
+
+  <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+
+    <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+      id="accesibilidad-icon"><!-- clase accesibilidad-icon /modificada por css  round-circle para redondear la imagen-->
+    
+    <div id="accesibilidad-menu" class="accesibilidad-menu">
+      <ul>
+        <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+        <li><button id="aumentar-texto">Aumentar Texto</button></li>
+        <li><button id="disminuir-texto">Disminuir Texto</button></li>
+        <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+      </ul>
+    </div>
+
+
+
+    <a href="mapadelsitio.html">
+      <img src="ico/mapa del sitio icono.jpg" alt="Icono Mapa Sitio" class="icon-mapa-sitio rounded-circle"><!-- clase icon-mapa-sitio /modificada por css round-circle para redondear la imagen-->
+    </a>
+
+
+    
+
+    <!-- botones de modulos -->
+    <br>
+    <p class="text-center">Por favor seleccione el modulo con el cual desea trabajar:</p><!-- text-center para alienar al centro -->
+    <div class="container"><!-- contenedor botones -->
+      <div class="row justify-content-center align-items-center mt-4"><!-- propiedades para centrar y agregar margen -->
+        <div class="col-12 text-center"><!-- tamaño y centrado -->
+          <br><br><br><br><br>
+          <input type="button" value="Digitación Comparendos" class="custom-button rounded-pill" 
+            onclick="window.location.href='digitacion.html'"> <!-- boton custom-button para diseño propio de los botones - onlick para dar click y dirigir a ese modulo -->
+          <input type="button" value="Validación Comparendos" class="custom-button rounded-pill"
+            onclick="window.location.href='validacion.html'"><!-- boton validacion -->
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center mt-4">
+        <div class="col-12 text-center">
+          <br><br><br><br>
+          <input type="button" value="Depuración" class="custom-button rounded-pill botondepuracion"
+            onclick="window.location.href='depuracion.html'">
+          <input type="button" value="Corrección Comparendos" class="custom-button rounded-pill botoncorrecion" 
+            onclick="window.location.href='correcion.html'"> <!-- rounded-pill para efecto redondeado de los botones -->
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center mt-4">
+        <div class="col-12 text-center">
+          <br><br><br><br>
+          <input type="button" value="Salir" class="custom-button rounded-pill"
+            onclick="window.location.href='index.html'">
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer class="p-2">
+    Copyright © DJF-Software 2023
+    <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+  </footer>
+</body>
+
+</html>

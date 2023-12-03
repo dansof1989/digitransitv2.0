@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitransit - Seguvial S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-container"><!-- contenedor -->
+        <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image"><!-- clase hader-image /modificada por css -->
+        
+
+        <div class="header-title"><!-- clase hader-title /modificada por css -->
+            <h1>Bienvenido a Su Sistema Digitransit</h1>
+        </div>
+        <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+            class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+    </div>
+
+
+
+    <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+        <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+            id="accesibilidad-icon"><!-- clase accesibilidad-icon /modificada por css  round-circle para redondear la imagen-->
+        
+        <div id="accesibilidad-menu" class="accesibilidad-menu">
+            <ul>
+                <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+                <li><button id="aumentar-texto">Aumentar Texto</button></li>
+                <li><button id="disminuir-texto">Disminuir Texto</button></li>
+                <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+            </ul>
+        </div>
+
+        <a href="mapadelsitio.html">
+            <img src="ico/mapa del sitio icono.jpg" alt="Icono Mapa Sitio" class="icon-mapa-sitio rounded-circle"><!-- clase icon-mapa-sitio /modificada por css round-circle para redondear la imagen-->
+        </a>
+
+        <!-- formulario -->
+        <form action="login.php" method="post" class="text-center mt-4"><!-- clase text-center para centrar/codigo para php posterior -->
+            
+            <br><br><br>
+            <p class="text-center-custom margin-top-137px">Por favor ingrese su nombre de usuario y contraseña:</p><!-- clase agregada margin-top-137px en css para bajar el texto y el formulario al centro de la pagina  -->
+            
+            <br>
+            <div class="form-group"><!-- clase formgroup para manetner una alineacion indicada de acuerdo a un formulario ===mt-4 para para la margen superior  -->
+                
+                <img src="ico/username.PNG" alt="Icono Usuario" class="icon-usuario rounded-circle"><!-- clase para modificar los iconos de usuario y contraseña en css  round-circle para redondear la imagen-->
+                
+                <label for="usuario">Usuario:</label>
+                <input class="rounded-pill" type="text" id="usuario" name="usuario" required><!-- entrada de texto -->
+            </div>
+            <br>
+            <div class="form-group mt-2"><!-- clase formgroup para manetner una alineacion indicada de acuerdo a un formulario ===mt-2 para para la margen superior-->
+                
+                <img src="ico/password.PNG" alt="Icono Password" class="icon-password rounded-circle"><!-- clase para modificar los iconos de usuario y contraseña en css  round-circle para redondear la imagen-->
+                
+                <label for="contrasena">Contraseña:</label>
+                <input class="rounded-pill" type="password" id="contrasena" name="contrasena" required><!-- entrada de texto -->
+                
+                <br><br><br><br>
+            </div>
+
+            <input type="submit" value="Ingresar" class="custom-button rounded-pill custom-button"><!-- Agrega la clase "rounded-pill" para hacerlo ovalado -->
+            
+        </form>
+    </main>
+
+    <footer class="p-2">
+        Copyright © DJF-Software 2023
+        <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+    </footer>
+</body>
+
+</html>

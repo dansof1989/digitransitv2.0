@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitransit - Seguvial S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="img/Digitransit.JPG" alt="Logo Digitransit" class="header-image">
+        <!-- clase hader-image /modificada por css -->
+
+        <div class="header-title"><!-- clase hader-title /modificada por css -->
+            <h1>Administración</h1>
+        </div>
+        <img src="img/Logo Seguvial S.A..JPG" alt="Logo Seguvial S.A."
+            class="header-image rounded"><!-- clase hader-image /modificada por css  rounded para redondear la-->
+    </div>
+
+
+
+    <main class="custom-bg #55A2D9" id="main"> <!-- clase para poner el color del fondo /modificado por css-->
+
+        <img src="ico/accesibilidad.png" alt="Icono Accesibilidad" class="icon-accesibilidad rounded-circle"
+            id="accesibilidad-icon">
+        <!-- clase icon-accesibilidad /modificada por css  round-circle para redondear la imagen-->
+        <div id="accesibilidad-menu" class="accesibilidad-menu">
+            <ul>
+                <li><button id="contraste-alto">Contraste Alto</button></li><!-- lista de opciones de accesibilidad-->
+                <li><button id="aumentar-texto">Aumentar Texto</button></li>
+                <li><button id="disminuir-texto">Disminuir Texto</button></li>
+                <li><button id="teclado-en-pantalla">Teclado en Pantalla</button></li>
+            </ul>
+        </div>
+
+
+
+        <a href="mapadelsitio.html">
+            <img src="ico/mapa del sitio icono.jpg" alt="Icono Mapa Sitio" class="icon-mapa-sitio rounded-circle">
+        </a>
+
+
+        <!-- clase icon-mapa-sitio /modificada por css round-circle para redondear la imagen-->
+
+        <!-- tabla con la lista de usuarios registrados -->
+
+        <h4 class="text-center-custom">Listado de Usuarios</h4>
+        <br>
+
+        <div class="d-flex justify-content-center align-items-center" style="height: 35vh;">
+            <div class="col-sm-6">
+                <table class="table"> <!-- indica tabla con su clase -->
+                    <thead>  <!-- encabezados o titulos -->
+                        <tr>
+                            <th>Usuario (Nombre)</th>
+                            <th>Documento</th>
+                            <th>User</th>
+                            <th>Password</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody> <!-- cuerpo de la tbla -->
+                        <tr>
+                            <td contenteditable="true">Camilo Palacio</td> <!-- datos -->
+                            <td contenteditable="true">1073682126</td>
+                            <td contenteditable="true">Cpalacio</td>
+                            <td contenteditable="true">11234587</td>
+                            <td>
+                                <button class="btn btn-primary edit-button">Editar</button>
+                                <button class="btn btn-success save-button" style="display: none;">Guardar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Elizabeth Rincon</td>
+                            <td contenteditable="true">41587478</td>
+                            <td contenteditable="true">Erincon</td>
+                            <td contenteditable="true">458742</td>
+                            <td>
+                                <button class="btn btn-primary edit-button">Editar</button>
+                                <button class="btn btn-success save-button" style="display: none;">Guardar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Jhon Rodriguez</td>
+                            <td contenteditable="true">19458745</td>
+                            <td contenteditable="true">Jrodriguez</td>
+                            <td contenteditable="true">7847596</td>
+                            <td>
+                                <button class="btn btn-primary edit-button">Editar</button> <!-- datos -->
+                                <button class="btn btn-success save-button" style="display: none;">Guardar</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <br><br><br>
+
+
+
+        <div class="text-center"> <!-- Agregamos la clase text-center para centrar el contenido -->
+            <div class="mx-1 mt-4">
+                <input type="button" value="Volver" class="custom-button rounded-pill" onclick="window.location.href = 'index.html';">  
+                <!-- para volver al index.html -->
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer class="p-2">
+        Copyright © DJF-Software 2023
+        <img class="rounded" src="img/Logo.jpeg" alt="Logo DJF-Software" width="100">
+
+    </footer>
+</body>
+
+</html>
